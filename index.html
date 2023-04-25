@@ -25,15 +25,18 @@
         <!--Setup the first section with title and a subtitle-->
         <section class="landing-section">
 
-            <article><h2>Hi, I'm <strong>Vinicius Beuther</strong> :)</h2>
+            <article><h2>Hi, I'm <br><strong>Vinicius Beuther</strong> :)</h2>
             <p id="landing-section">Front-End Developer</p>
-
+            
     <!--Buttons setup-->
             <!--Button to download the curriculum-->
-        <button id="download-curriculum"><a href="files/FrontEndCurriculum2023-PDF.pdf">Download CV</a></button>  
-
-            <!--Button to send me a message-->
-        <button id="contact-me"><a href="https://wa.me/5547991222358" target="_blank">Contact me</a></button>
+        
+            <div id="buttons-landing">
+                <button id="download-curriculum"><a href="files/FrontEndCurriculum2023-PDF.pdf">Download CV</a></button>
+                    <!--Button to send me a message-->
+                <button id="contact-me"><a href="https://wa.me/5547991222358" target="_blank">Contact me</a></button>
+            </div>
+        
         </article>
 
     <!--Picture-->
@@ -48,7 +51,14 @@
         <!--Second section with more about me-->
         <section id="moreAboutMe">
             <h1>About me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae a eveniet ea assumenda placeat error impedit debitis expedita esse cumque cum deleniti ducimus voluptatem possimus tenetur vel, odit, aliquam corporis.</p>
+            <p>Como desenvolvedor Front-end com formação acadêmica, tenho habilidades sólidas em HTML, 
+                CSS e aprendendo JavaScript, o que me permite criar interfaces de usuário intuitivas e responsivas. Também 
+                tenho um pouco de experiência e GIT e posso trabalhar efetivamente em equipe. Estou sempre 
+                buscando novas oportunidades para aplicar minhas habilidades e continuar crescendo 
+                profissionalmente. Além das habilidades técnicas, sou altamente motivado e comprometido em oferecer soluções 
+                inovadoras para os projetos em que trabalho. Se você está procurando um desenvolvedor Front-end 
+                motivado, comprometido e dedicado, entre em contato comigo e vamos conversar mais sobre 
+                como posso agregar valor à sua equipe de desenvolvimento. </p>
 
         </section>
 
@@ -58,13 +68,14 @@
             <!--My name / Smile card-->
             <div class="circle-card">
                 <div class="circle">
-                    <picture><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <picture>
+                        <svg class="svg-emoji" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="#FECE2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M7 13C7 13 8.5 15 11 15C13.5 15 15 13 15 13" stroke="#FECE2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M8 8H8.01" stroke="#FECE2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M14 8H14.01" stroke="#FECE2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        </picture>
+                    </picture>
 
                         <h3><strong>My Name</strong></h3>
                         <p>Vinicius E. Beuther</p>
@@ -75,7 +86,7 @@
             <div class="circle-card">
                 <div class="circle">
                     <picture>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="svg-emoji" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.00012 4.00006H20.0001C21.1001 4.00006 22.0001 4.90006 22.0001 6.00006V18.0001C22.0001 19.1001 21.1001 20.0001 20.0001 20.0001H4.00012C2.90012 20.0001 2.00012 19.1001 2.00012 18.0001V6.00006C2.00012 4.90006 2.90012 4.00006 4.00012 4.00006Z" stroke="#FECE2F" stroke-width="1.47675" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M22.0002 5.99951L12.0002 12.9995L2.00024 5.99951" stroke="#FECE2F" stroke-width="1.47675" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>                        
@@ -89,7 +100,7 @@
             <div class="circle-card">
                 <div class="circle">
                     <picture>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="svg-emoji" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="#FECE2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M16 11.3698C16.1234 12.2021 15.9812 13.052 15.5937 13.7988C15.2062 14.5456 14.5931 15.1512 13.8416 15.5295C13.0901 15.9077 12.2384 16.0394 11.4077 15.9057C10.5771 15.7721 9.80971 15.3799 9.21479 14.785C8.61987 14.1901 8.22768 13.4227 8.09402 12.592C7.96035 11.7614 8.09202 10.9097 8.47028 10.1582C8.84854 9.40667 9.45414 8.79355 10.2009 8.40605C10.9477 8.01856 11.7977 7.8764 12.63 7.99981C13.4789 8.1257 14.2648 8.52128 14.8716 9.12812C15.4785 9.73496 15.8741 10.5209 16 11.3698Z" stroke="#FECE2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M17.5 6.5H17.51" stroke="#FECE2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -106,7 +117,7 @@
             <div class="circle-card">
                 <div class="circle">
                     <picture>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="svg-emoji" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M22 16.9202V19.9202C22.0011 20.1987 21.9441 20.4743 21.8325 20.7295C21.7209 20.9847 21.5573 21.2137 21.3521 21.402C21.1468 21.5903 20.9046 21.7336 20.6407 21.8229C20.3769 21.9121 20.0974 21.9452 19.82 21.9202C16.7428 21.5858 13.787 20.5343 11.19 18.8502C8.77382 17.3148 6.72533 15.2663 5.18999 12.8502C3.49997 10.2414 2.44824 7.27115 2.11999 4.18016C2.095 3.90363 2.12787 3.62492 2.21649 3.36178C2.30512 3.09865 2.44756 2.85685 2.63476 2.65178C2.82196 2.44671 3.0498 2.28287 3.30379 2.17068C3.55777 2.05849 3.83233 2.00042 4.10999 2.00016H7.10999C7.5953 1.99538 8.06579 2.16724 8.43376 2.48369C8.80173 2.80014 9.04207 3.2396 9.10999 3.72016C9.23662 4.68022 9.47144 5.62289 9.80999 6.53016C9.94454 6.88808 9.97366 7.27707 9.8939 7.65104C9.81415 8.025 9.62886 8.36827 9.35999 8.64016L8.08999 9.91016C9.51355 12.4137 11.5864 14.4866 14.09 15.9102L15.36 14.6402C15.6319 14.3713 15.9751 14.186 16.3491 14.1063C16.7231 14.0265 17.1121 14.0556 17.47 14.1902C18.3773 14.5287 19.3199 14.7635 20.28 14.8902C20.7658 14.9587 21.2094 15.2034 21.5265 15.5777C21.8437 15.9519 22.0122 16.4297 22 16.9202Z" stroke="#FECE2F" stroke-width="1.48312" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>                            
                                                 

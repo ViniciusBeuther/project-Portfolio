@@ -34,7 +34,62 @@ header span#portfolio {
 section.landing-section {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 81px 150px 0px 150px;
+}
+section.landing-section article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  /*Styling my name in first section*/
+  /*Front-end description*/
+  /*Buttons style*/
+}
+section.landing-section article h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.94rem;
+  color: #F9F9F9;
+  margin-bottom: 1.13rem;
+  /*The yellow strong text*/
+}
+section.landing-section article h2 strong {
+  color: #FECE2F;
+}
+section.landing-section article p#landing-section {
+  font-weight: 500;
+  font-size: 1.13rem;
+  line-height: 1.44rem;
+  color: #828282;
+}
+section.landing-section article div#button-landing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+section.landing-section article button {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: transparent;
+  border: #FECE2F solid 1px;
+  padding: 12px 27px;
+  margin: 2.94rem 0.9375rem 0rem 0rem;
+}
+section.landing-section article button a {
+  text-decoration: none;
+  color: #F9F9F9;
+  font-weight: bold;
+}
+section.landing-section article button a:visited {
+  color: white;
+}
+section.landing-section article button:hover {
+  background-color: #FECE2F;
+  border: #000 1px solid;
+  transition: 1;
 }
 section.landing-section aside#myself-picture, section.landing-section img {
   width: 100%;
@@ -43,6 +98,70 @@ section.landing-section aside#myself-picture, section.landing-section img {
   border-radius: 42% 58% 62% 38%/30% 53% 47% 70%;
 }
 section.landing-section aside#myself-picture:hover, section.landing-section img:hover {
-  box-shadow: 0px 0px 21px 0px #FECE2F;
+  border: 1px solid #FECE2F;
   transition: 1.5;
+  scale: 1.025;
+}
+
+/*Second section - About me*/
+section#moreAboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section#moreAboutMe h1 {
+  color: #F9F9F9;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.63rem;
+  margin-top: 10.625rem;
+  margin-bottom: 1.88rem;
+}
+section#moreAboutMe p {
+  text-indent: 48px;
+  color: #828282;
+  width: 46.5625rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+/*Contanct section (Third)*/
+div.contact-info {
+  margin-top: 5.3125rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 150px;
+  /*Card with the circle and information about me*/
+}
+div.contact-info .circle-card {
+  /*SVG background*/
+  /*Padding of svg picture*/
+}
+div.contact-info .circle-card .circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.contact-info .circle-card svg.svg-emoji {
+  background: #303030;
+  width: 62px;
+  height: 62px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+div.contact-info .circle-card svg {
+  padding: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+div.contact-info .circle-card strong {
+  color: #F9F9F9;
+}
+div.contact-info .circle-card p {
+  margin: 5px 0px 7.9375rem 0px;
+  color: #828282;
 }/*# sourceMappingURL=style.css.map */
