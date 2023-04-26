@@ -164,4 +164,29 @@ div.contact-info .circle-card strong {
 div.contact-info .circle-card p {
   margin: 5px 0px 7.9375rem 0px;
   color: #828282;
+}
+
+/*Project cards section*/
+#projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr;
+  grid-column-gap: 45px;
+  grid-row-gap: 32px;
+  place-items: center;
+  padding: 0px 150px;
+  /*Main card*/
+}
+#projects div.project-main-card {
+  background-color: #303030;
+  max-width: 350px;
+  width: 100%;
+  height: 240px;
+  padding: 25px;
+}
+#projects div.project-main-card div.project-card-image {
+  max-width: 300px;
+  width: 100%;
+  height: 130px;
+  background-color: #F9F9F9;
 }/*# sourceMappingURL=style.css.map */
