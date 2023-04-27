@@ -193,9 +193,13 @@ div.contact-info{
 }
 
 /*Project cards section*/
-
+.project-title{
+    text-align: center;
+    color: $white-font;
+    font-size: 2rem;
+}
 #projects{
-   
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 2fr;
@@ -203,7 +207,7 @@ div.contact-info{
     grid-row-gap: 32px;
     place-items: center;
     padding: 0px 150px;
-
+    margin-bottom: 7.9375rem;
         /*Main card*/
         div.project-main-card{
             background-color: $card-bg;
@@ -217,9 +221,58 @@ div.contact-info{
                     width: 100%;
                     height: 130px;
                     background-color: #F9F9F9;
+                    margin-bottom: 25px;
                 }
 
-                
+                h3{
+                    font-weight: bold;
+                    font-size: 1.13rem;
+                    color: $theme;
+                    margin-bottom: 6px;
+                }
+                p{
+                    color: $secundary-font-color;
+                    font-size: 0.875rem;
+                }
+
+        }
+        div.project-main-card:hover{
+            transition: .8;
+            scale: 1.05;
+            box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
         }
     
+}
+
+/*Styling the services section*/
+
+section#services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 45px;
+    place-items: center;
+    padding: 0px 150px;
+    margin-top: 30px;
+
+        .service-card{
+            width: 350px;
+            height: 240px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: $card-bg;
+            border-bottom: 5px;
+            border-bottom-color: $theme;
+            border-bottom-style: solid;
+            box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+
+                picture{
+                    display: grid;
+                    place-items: center;
+                }
+        }
+        
+
 }

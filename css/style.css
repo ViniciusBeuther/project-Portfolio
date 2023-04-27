@@ -167,7 +167,14 @@ div.contact-info .circle-card p {
 }
 
 /*Project cards section*/
+.project-title {
+  text-align: center;
+  color: #F9F9F9;
+  font-size: 2rem;
+}
+
 #projects {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 2fr;
@@ -175,6 +182,7 @@ div.contact-info .circle-card p {
   grid-row-gap: 32px;
   place-items: center;
   padding: 0px 150px;
+  margin-bottom: 7.9375rem;
   /*Main card*/
 }
 #projects div.project-main-card {
@@ -189,4 +197,48 @@ div.contact-info .circle-card p {
   width: 100%;
   height: 130px;
   background-color: #F9F9F9;
+  margin-bottom: 25px;
+}
+#projects div.project-main-card h3 {
+  font-weight: bold;
+  font-size: 1.13rem;
+  color: #FECE2F;
+  margin-bottom: 6px;
+}
+#projects div.project-main-card p {
+  color: #828282;
+  font-size: 0.875rem;
+}
+#projects div.project-main-card:hover {
+  transition: 0.8;
+  scale: 1.05;
+  box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*Styling the services section*/
+section#services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 45px;
+  place-items: center;
+  padding: 0px 150px;
+  margin-top: 30px;
+}
+section#services .service-card {
+  width: 350px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #303030;
+  border-bottom: 5px;
+  border-bottom-color: #FECE2F;
+  border-bottom-style: solid;
+  box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.75);
+}
+section#services .service-card picture {
+  display: grid;
+  place-items: center;
 }/*# sourceMappingURL=style.css.map */
