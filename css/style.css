@@ -224,6 +224,7 @@ section#services {
   place-items: center;
   padding: 0px 150px;
   margin-top: 30px;
+  margin-bottom: 7.9375rem;
 }
 section#services .service-card {
   width: 350px;
@@ -241,4 +242,28 @@ section#services .service-card {
 section#services .service-card picture {
   display: grid;
   place-items: center;
+}
+section#services .service-card h2 {
+  margin-top: 40px;
+  font-size: 2rem;
+  color: #828282;
+}
+
+/*Styling my skills section*/
+section#mySkills {
+  padding: 0px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 11.5625rem;
+}
+section#mySkills .skill-card {
+  padding: 35px;
+  background-color: #303030;
+}
+section#mySkills .skill-card:hover {
+  transition: 0.8;
+  scale: 1.05;
+  box-shadow: 0px 0px 20px 0px #FECE2F;
 }/*# sourceMappingURL=style.css.map */
