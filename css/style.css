@@ -1,15 +1,23 @@
 /*Setting colors in variables*/
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap");
 /*Standard configs*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 
 body {
   background-color: #1E1E1E;
   width: 100%;
   height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*Header settings*/
@@ -24,6 +32,25 @@ header {
 header span#header-links {
   display: flex;
   gap: 45px;
+}
+header span#header-links a {
+  text-decoration: none;
+  color: #F9F9F9;
+}
+header span#header-links a:visited {
+  color: none;
+}
+header span#header-links a:hover {
+  transition: 1.5;
+  scale: 1.05;
+  color: #FECE2F;
+  cursor: pointer;
+}
+header nav#aboutMe:hover, header #project:hover, header #service:hover, header #skill:hover {
+  transition: 1.5;
+  scale: 1.05;
+  color: #FECE2F;
+  cursor: pointer;
 }
 header span#portfolio {
   font-size: 1.63rem;
@@ -266,4 +293,17 @@ section#mySkills .skill-card:hover {
   transition: 0.8;
   scale: 1.05;
   box-shadow: 0px 0px 20px 0px #FECE2F;
+}
+
+footer {
+  background-color: #303030;
+  padding: 15px;
+}
+footer p {
+  font-size: 16px;
+  text-align: center;
+  color: #F9F9F9;
+}
+footer p strong {
+  color: #FECE2F;
 }/*# sourceMappingURL=style.css.map */

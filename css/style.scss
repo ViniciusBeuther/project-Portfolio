@@ -5,13 +5,19 @@ $secundary-font-color: #828282;
 $theme: #FECE2F;
 $card-bg: #303030;
 
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+
 /*Standard configs*/
 *
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
 }
+
 
 body
 {
@@ -19,6 +25,11 @@ body
     width: 100%;
     height: 100vh;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 /*Header settings*/
 header
@@ -29,10 +40,32 @@ header
     padding: 35px 150px 35px 150px;
     color: $white-font;
     font-size: 1.13rem;
+    
 
     span#header-links{
         display: flex;
         gap: 45px;
+
+            a{
+                text-decoration: none;
+                color: $white-font;
+            }
+            a:visited{
+                color: none;
+            }
+            a:hover{
+                transition: 1.5;
+                scale: 1.05;
+                color: $theme;
+                cursor: pointer;
+            }
+
+    }
+    nav#aboutMe:hover, #project:hover, #service:hover, #skill:hover{
+        transition: 1.5;
+        scale: 1.05;
+        color: $theme;
+        cursor: pointer;
     }
 
     span#portfolio{
@@ -74,6 +107,7 @@ section.landing-section{
                     font-size: 1.13rem;
                     line-height: 1.44rem;
                     color: $secundary-font-color;
+                    
                 }
 
                 /*Buttons style*/
@@ -199,6 +233,7 @@ div.contact-info{
     font-size: 2rem;
 }
 #projects{
+    
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -302,4 +337,18 @@ section#mySkills{
             scale: 1.05;
             box-shadow: 0px 0px 20px 0px $theme;
         }
+}
+
+footer{
+    background-color: $card-bg;
+    padding: 15px;
+    p{
+        font-size: 16px;
+        text-align: center;
+        color: $white-font;
+
+            strong{
+                color: $theme;
+            }
+    }
 }
