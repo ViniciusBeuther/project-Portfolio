@@ -243,6 +243,11 @@ div.contact-info{
     place-items: center;
     padding: 0px 150px;
     margin-bottom: 7.9375rem;
+
+        .card-links{
+            text-decoration: none;
+            
+        }
         /*Main card*/
         div.project-main-card{
             background-color: $card-bg;
@@ -257,6 +262,7 @@ div.contact-info{
                     height: 130px;
                     background-color: #F9F9F9;
                     margin-bottom: 25px;
+                    cursor: pointer;
                 }
 
                 h3{
@@ -282,6 +288,7 @@ div.contact-info{
 /*Styling the services section*/
 
 section#services{
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -320,13 +327,25 @@ section#services{
 }
 
 /*Styling my skills section*/
+#skill-title{
+    margin-bottom: 30px;
+}
 section#mySkills{
-    padding: 0px 150px;
+    /*padding: 0px 150px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 11.5625rem;
+    margin-top: 30px;
+    */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    grid-gap: 0px 100px;
+    padding: 0px 150px;
+    margin-bottom: 185px;
+    margin-top: 30px;
         
         .skill-card{
             padding: 35px;
@@ -352,3 +371,138 @@ footer{
             }
     }
 }
+
+/*Responsive for mobile*/
+@media screen and (max-width: 600px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }      
+
+    /*Header Section*/
+    header{
+        justify-content: space-around;
+        padding: 24px 0px 0px 24px;
+
+            span#header-links{
+                font-size: 10px;
+                gap: 5px;
+                padding: 0px 30px 0px 0px;
+            }
+
+            span#portfolio{
+                margin: 0px;
+                padding: 0px;
+                font-size: 16px;
+            }
+    }
+
+    /*Initial Landing Section*/
+    section.landing-section{  
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+            article{
+                div#buttons-landing{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    margin-bottom: 56px;
+                }
+
+                h2{
+                    margin: 56px 8px 8px 8px;
+                    width: 100%;
+                    font-size: 30px;   
+                    text-align: center;
+                }
+                p#landing-section{
+                    text-align: center;
+                    width: 100%;
+                }
+                
+                    }
+                    
+    }
+
+    /*More About Me Section*/
+    section#moreAboutMe{
+        
+            h1{
+                text-align: center;
+                margin-bottom: 0px;
+            }
+            p{
+                margin-top: 0px;
+                width: 100%;
+                font-size: 14px;
+                padding: 24px;
+                margin-bottom: 0px;
+            }
+    }
+
+    /*My contact section*/
+    div.contact-info{
+        padding: 20px; 
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+            .circle-card{
+                padding: 0px;
+                margin: 0px;
+                max-width: 150px;
+                width: 100%;
+                height: auto;
+                    p{
+                        font-size: 12px;
+                    }
+                    h3{
+                        font-size: 18px;
+                    }
+            }
+            
+    }
+
+    /*Projects Section*/
+    section#projects{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6fr;
+        grid-row-gap: 32px;
+        place-items: center;
+        padding: 0px;
+        margin-bottom: 7.9375rem;
+        
+    }
+
+
+    /*My services Section*/
+    section#services{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        grid-gap: 24px 45px;
+        place-items: center;
+        padding: 0px;
+
+  }
+
+    /*My skills section*/
+    section#mySkills{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 24px 50px;
+        padding: 0px 24px;
+    }
+}
+
+
+
+  
